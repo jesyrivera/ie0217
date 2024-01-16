@@ -1,7 +1,24 @@
 # Parte Practica
 
-Instrucciones de ejecucion
+###Instrucciones de ejecucion
 
+En * *SOURCES* * se escribe la lista de nombres de archivos fuentes del programa, en este caso incluye dos archivos
+
+En el * *EXECUTABLE* * se indica el nombre del archivo ejecutable que se debe de generar.
+
+Luego siguen los compiladores y las opciones de compilacion, en el caso de * *CXX* * este establece el compilador que se va a utilizar, va ser el g++, luego con * *CXXFLAGS* * este define las opciones de compilacion, como activar todas las advertencias y especificar el estandar de C++.
+
+En los archivos objeto, se define la lista de archivos objeto, esto se generaran a partir de los archivos fuentes. La extencion .cpp se va a cambiar por .exe.
+
+Se escribio los objetivos, como en el caso de all y .PHONY, se especifica el objetivo que es la combinacion de las reglas build y run para el objetivo all, para el objetivo .PHONY siempre deben de ejecutarse.
+
+Se define la regla para eliminar los archivos compilados y el ejecutable, lo unico que queda es el codigo fuente.
+
+Se define la regla para construir el programa, * *build* * especifica un objetivo para compilar el programa. Utiliza el compilador $(CXX) con las opciones de compilación $(CXXFLAGS), el nombre del ejecutable $(EXECUTABLE) y la lista de archivos fuente $(SOURCES).
+
+Se define run, que es la regla para ejecutar el programa con los argumentos 0 y 20.
+
+Se definen las reglas de compilacion: '$(EXECUTABLE)' se usa para definir la regla que compile el ejecutable usando los archivos objeto especificados en objects.
 
 # Parte Teorica
 
@@ -200,29 +217,55 @@ Sirve para declarar objetivos que no representa el nombre de un archivo, es una 
 
 
 [^1] : https://www.freecodecamp.org/espanol/news/lenguajes-compilados-vs-interpretados/
+
 [^2] : https://www.uhu.es/04004/material/Transparencias3.pdf
+
 [^3] : https://ocw.bib.upct.es/pluginfile.php/7811/mod_resource/content/1/019_064_capitulo%202_TIPOS%20DE%20DATOS%20Y%20VARIABLES%20EN%20C.pdf
+
 [^4] : https://learn.microsoft.com/es-es/cpp/c-language/initialization?view=msvc-170
+
 [^5] : https://learn.microsoft.com/es-es/cpp/c-language/simple-variable-declarations?view=msvc-170
+
 [^6] : https://learn.microsoft.com/es-es/cpp/cpp/function-overloading?view=msvc-170
+
 [^7] : https://lenguajedeprogramacion.com/programacion-c/que-es-un-puntero-usos/#:~:text=Un%20puntero%20no%20es%20m%C3%A1s,valor%2C%20por%20ejemplo%20un%20n%C3%BAmero.
+
 [^8] : https://www.fdi.ucm.es/profesor/rhermida/FC_practica4.pdf
+
 [^9] https://ccia.ugr.es/~jfv/ed1/c/cdrom/cap6/cap62.html
+
 [^10] : https://julioecheverri.wordpress.com/2014/07/23/el-tipo-string-y-sus-metodos-mas-importantes-en-c/
+
 [^11] : https://learn.microsoft.com/es-es/cpp/cpp/header-files-cpp?view=msvc-170
+
 [^12] : https://www.guru99.com/es/local-vs-global-variable.html
+
 [^13] : https://www.oma.org.ar/omanet/cym98/valorref.htm#:~:text=Por%20referencia%20significa%20que%20se,puede%20modificarla%20de%20cualquier%20manera.
+
 [^14] : https://sdimos.com/curso/c/c-puntero-a-puntero-puntero-doble/
+
 [^15] : https://www.ezavalar.com/2016/06/apuntadores-dobles.html
+
 [^16] : https://platzi.com/tutoriales/1740-lenguaje-c-2019/9015-directivas-pre-procesador/#:~:text=Las%20directivas%20%23if%2C%20%23ifdef,debe%20compilar%20bajo%20distintas%20condiciones.&text=Indicara%20el%20mensaje%20de%20error,en%20la%20que%20suceda%20realmente.
+
 [^17] : https://learn.microsoft.com/es-es/cpp/cpp/this-pointer?view=msvc-170
+
 [^18] : https://learn.microsoft.com/es-es/cpp/extensions/nullptr-cpp-component-extensions?view=msvc-170
+
 [^19] : https://repositorio-uapa.cuaieed.unam.mx/repositorio/moodle/pluginfile.php/1469/mod_resource/content/1/contenido/index.html
+
 [^20] : https://es.parasoft.com/blog/finding-memory-leaks-in-c-or-c/
+
 [^21] : https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html
+
 [^22] : https://www.fing.edu.uy/tecnoinf/maldonado/cursos/eda/material/otros/instructivo_make.pdf 
+
 [^23] : https://es.linux-console.net/?p=750
+
 [^24] : https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/Extended-Asm.html#Extended-Asm 
+
 [^25] : https://www.fing.edu.uy/tecnoinf/maldonado/cursos/eda/material/otros/instructivo_make.pdf
+
 [^26] : https://blog.desdelinux.net/que-es-un-archivo-makefile-y-como-funciona-dentro-de-linux/
+
 [^27] : https://ftp.gnu.org/old-gnu/Manuals/make-3.79.1/html_node/make_34.html#:~:text=A%20phony%20target%20is%20one,name%2C%20and%20to%20improve%20performance.
