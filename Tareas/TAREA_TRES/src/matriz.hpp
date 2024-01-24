@@ -52,19 +52,6 @@ public:
      * @throw invalid_argument lanza un mensaje de error si la operacion es erronea
      */
     Matriz<T> realizarOperacion() const;
-	
-	friend Matriz<T> operator+(const Matriz<T>& matriz1, const Matriz<T>& matriz2) {
-        return OperacionesBasicas<T>::suma(matriz1, matriz2);
-    }
-
-    friend Matriz<T> operator-(const Matriz<T>& matriz1, const Matriz<T>& matriz2) {
-        return OperacionesBasicas<T>::resta(matriz1, matriz2);
-    }
-
-    friend Matriz<T> operator*(const Matriz<T>& matriz1, const Matriz<T>& matriz2) {
-        return OperacionesBasicas<T>::multiplicacion(matriz1, matriz2);
-    }
-
 };
 
 #endif // MATRIZ_HPP
