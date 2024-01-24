@@ -1,6 +1,6 @@
 /**
  * @file operacionesBasicas.cpp
- * @author your name (you@domain.com)
+ * @author jesyrivera
  * @brief Se implementan las funciones de la clase OperacionesBasicas para realizar operaciones en las matrices
  * @version 0.1
  * @date 2024-01-20

@@ -1,6 +1,6 @@
 /**
  * @file operacionesBasicas.hpp
- * @author your name (you@domain.com)
+ * @author jesyrivera
  * @brief Se declara la clase OperacionesBasicas y funciones prototipo para manipular las matrices
  * @version 0.1
  * @date 2024-01-20
