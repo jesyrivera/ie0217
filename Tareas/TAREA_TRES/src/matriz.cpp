@@ -22,8 +22,7 @@
 template <typename T>
 Matriz<T>::Matriz(size_t filas, size_t columnas, const vector<vector<T>>& valores)
     : filas(filas), columnas(columnas), datos(valores) {
-    
-    if constexpr (!is_same<T, int>::value && !is_same<T, float>::value && !is_same<T, complex<double>>::value) {
+    if (!is_same<T, int>::value && !is_same<T, float>::value && !is_same<T, complex<double>>::value) {
         throw invalid_argument("Tipo de dato no permitido. Solo se permiten int, float y complex<double>.");
     }
 }

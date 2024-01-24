@@ -54,4 +54,5 @@ public:
     Matriz<T> realizarOperacion() const;
 };
 
+#include "matriz.cpp"
 #endif // MATRIZ_HPP
