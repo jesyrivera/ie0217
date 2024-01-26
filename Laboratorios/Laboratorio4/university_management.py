@@ -27,6 +27,8 @@ teacher2.assign_course(course2.course_code)
 #se invoca el metodo display_info a la instacia student1 para que muestre la informacion del estudiante
 student1.display_info()
 
+#se invoca el metodo display_info a la instacia teacher1 para que muestre la informacion del profesor
 teacher1.display_info()
 
+#se invoca el metodo display a la instacia course1 para que muestre la informacion del curso
 course1.display()
