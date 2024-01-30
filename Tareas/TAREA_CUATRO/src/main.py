@@ -31,7 +31,7 @@ def main():
     while True: #ciclo infinito
         menu_principal() #se lllama a la funcion de menu
         #se solicita que ingrese un numero del menu
-        opcion = int(input("\nIngrese el numero de la opcion que deseada del menu: "))
+        opcion = input("\nIngrese el numero de la opcion que deseada del menu: ")
 
         if opcion == '1':
             #se llama al metodo ingresar_alergia de la instancia tipos_alergias
