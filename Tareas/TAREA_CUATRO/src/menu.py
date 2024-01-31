@@ -47,7 +47,7 @@ def main():
                 alergias_usuario = tipos_alergias.obtener_alergias_usuario()
                 #evaluacion_especifica.alergias_usuario = evaluacion_especifica.evaluar_alergias(puntuacion_usuario, alergias_usuario)
                 #se mide el tiempo de ejecucion
-                medicion_tiempo(evaluacion_especifica.evaluar_alergias, puntuacion_usuario, alergias_usuario)
+                medicion_tiempo(evaluacion_especifica.evaluar_alergias, puntuacion_usuario)
                 #se imprimen los resultados
                 evaluacion_especifica.imprimir_resultados(puntuacion_usuario)
             except ValueError:
