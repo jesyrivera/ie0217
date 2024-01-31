@@ -9,7 +9,7 @@ except:
     print("Not an even number")
 # condicional
 else:
-    #variable almacena la division
+    # variable almacena la division
     reciprocal = 1/num
-    #imprime el numero
+    # imprime el numero
     print(reciprocal)
