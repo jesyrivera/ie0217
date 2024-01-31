@@ -10,9 +10,9 @@ class Alergia:
         Alergia.alergias_lista.append(self)
  
     @classmethod #decorador que indica que el metodo pertenece a la clase
-    def obtener_alergias():# se define el metodo de clase
+    def obtener_alergias(cls):# se define el metodo de clase
         #retorna el atributo de la clase
-        return Alergia.alergias_lista
+        return cls.alergias_lista
     
     @staticmethod #decorador que indica que es un metodo estatico y que pertenece a la clase
     # no requiere de la instancia self para llamarlo
