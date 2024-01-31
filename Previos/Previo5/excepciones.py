@@ -7,7 +7,8 @@ try:
     result = numerator / denominator
     # imprime el resultado
     print(result)
-except:# si existe un error
+# si existe un error
+except:
     # imprime el mensaje
     print("Error: Denominator cannot be 0")
 # siempre se imprime
