@@ -13,7 +13,9 @@ plt.annotate('Valor Maximo', xy=(5, 14), xytext=(3, 16), arrowprops=dict(facecol
 # se personaliza el grafico
 plt.xlabel('Eje X')
 plt.ylabel('Eje y')
+# titulo
 plt.title('Grafico con Anotacion')
+# muestra informacion
 plt.legend()
 
 # muestra el grafico

@@ -8,9 +8,12 @@ y = [10, 12, 5, 8, 14]
 plt.scatter(x, y)
 
 # se personaliza el grafico
+# etiquetas
 plt.xlabel('Eje X')
 plt.ylabel('Eje y')
+# titulo
 plt.title('Grafico de Linea Simple')
+# muestra informacion
 plt.legend()
 
 # muestra el grafico

@@ -8,8 +8,10 @@ valores = [15, 8, 12, 10]
 plt.bar(categorias, valores, color='royalblue')
 
 # se personaliza el grafico
+# etiquetas
 plt.xlabel('Eje X')
 plt.ylabel('Eje y')
+# titulo
 plt.title('Grafico de Linea con Etiquetas y Titulo')
 
 # muestra el grafico
