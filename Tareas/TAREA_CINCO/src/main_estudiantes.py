@@ -3,12 +3,14 @@ import numpy as np
 # se importa el archivo estudiantes
 import estudiantes
 
+
 # funcion main
 def main():
     # llama a la funcion generar datos (notas y estudiantes)
     datos = estudiantes.generar_datos()
     # se crea un arreglo del tipo numpy con las notas de los estudiantes
-    # aqui se itera sobre la lista datos y convierte las notas de estudiantes en un arreglo
+    # aqui se itera sobre la lista datos
+    # convierte las notas de estudiantes en un arreglo
     notas_array = np.array([estudiante[1] for estudiante in datos])
     # operaciones usando NumPy
     # calcula el promedio de las notas de cada estudiante
