@@ -19,7 +19,6 @@ def main():
     nota_alta_por_estudiante = np.max(notas_array, axis=1)
     # se calcula la suma total de notas de materia
     suma_total_materia = np.sum(notas_array, axis=0)
-    
     # imprimir la informacion
     # se imprime la informacion
     print("\nDatos de notas:")
