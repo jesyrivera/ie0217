@@ -20,8 +20,6 @@ estudiantes:
 
 # Regla para limpiar archivos generados y el ejecutable
 clean:
-	rm -f $(SRC_DIR)/*.pyc
-	rm -f $(TARGET).exe
 	rm -f datos_cargo.csv
 
 # Regla para ejecutar el programa
