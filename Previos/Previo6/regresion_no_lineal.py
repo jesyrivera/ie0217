@@ -9,11 +9,11 @@ from sklearn.pipeline import make_pipeline
 np.random.seed(42)
 # se genera un vector de 100 numeros al azar multiplicado
 X = 2 * np.random.rand(100, 1)
-y = 0.5 * X**2 + X +2 + np.random.randn(100, 1)
+y = 0.5 * X**2 + X + 2 + np.random.randn(100, 1)
 
 # grafico de dispersion
 plt.scatter(X, y)
-#titulo
+# titulo
 plt.title('Datos de Regresion NO Lineal')
 # etiquetas
 plt.xlabel('X')
