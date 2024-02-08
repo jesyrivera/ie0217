@@ -14,7 +14,7 @@ plt.figure(figsize=(12, 5))
 # 1 fila 2 columnas subrafico 1
 plt.subplot(1, 2, 1)
 # grafico de dispersion
-plt.scatter(X[:0], X[:,1], c='blue', marker='o')
+plt.scatter(X[:, 0], X[:, 1], c='blue', marker='o')
 # titulo
 plt.title('Puntos de Datos Aleatorios')
 # etiquetas
@@ -39,11 +39,11 @@ plt.subplot(1, 2, 2)
 for i in range(len(X)):
     # traza un punto en el grafico de dispersion
     plt.scatter(X[i][0], X[i][1],
-                c=('r' if labels [i] == 0 else 'b' if labels[i] == 1 else 'g'),
+                c=('r' if labels[i] == 0 else 'b' if labels[i] == 1 else 'g'),
                 marker='o')
 
 # grafico de dispersion
-plt.scatter(centroids[:,0], centroids[:,1], c='black', marker = 'X', s=200,
+plt.scatter(centroids[:, 0], centroids[:, 1], c='black', marker='X', s=200,
             label='Centroids')
 # titulo
 plt.title('Resultado del Clustering con K-Means')
