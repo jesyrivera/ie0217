@@ -10,10 +10,10 @@ from sklearn.pipeline import make_pipeline
 np.random.seed(42)
 # se genera un vector de 100 numeros al azar multiplicado
 X = 2 * np.random.rand(100, 1)
-y = 0.5 * X**2 + X +2 + np.random.randn(100, 1)
+y = 0.5 * X**2 + X + 2 + np.random.randn(100, 1)
 
-# los datos de ejemplo que se crearon, se dividen en conjuntos de entrenamiento y prueba
-# se generan 4 vectores
+# los datos de ejemplo que se crearon, se dividen en conjuntos
+# de entrenamiento y prueba, se generan 4 vectores
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42)
 
@@ -23,16 +23,18 @@ modelo_polinomico = make_pipeline(
 # ajusta el modelo con respecto a X_train y y_train
 modelo_polinomico.fit(X_train, y_train)
 
-# crea el modelo Lasso (L1) que genera un conjunto de PolynomialFeatures degree 2
-# Agrega la suma de valores absolutos de los coeficientes multiplicados por un parametro de regularizacion
-# el parametro de regularizacion es 0.1
+# crea el modelo Lasso (L1) que genera un conjunto de
+# PolynomialFeatures degree 2
+# Agrega la suma de valores absolutos de los coeficientes multiplicados
+# por un parametro de regularizacion el parametro de regularizacion es 0.1
 modelo_lasso = make_pipeline(PolynomialFeatures(degree=2), Lasso(alpha=0.1))
 # ajusta el modelo con respecto a X_train y y_train
 modelo_lasso.fit(X_train, y_train)
 
-# crea el modelo Ridge (L2) que genera un conjunto de PolynomialFeatures degree 2
-# agrega la suma de valores cuadrados de los coeficientes multiplicados por un parametro de regularizacion
-# el parametro de regularizacion es 0.1
+# crea el modelo Ridge (L2) que genera un conjunto de
+# PolynomialFeatures degree 2
+# agrega la suma de valores cuadrados de los coeficientes multiplicados por
+# un parametro de regularizacionel parametro de regularizacion es 0.1
 modelo_ridge = make_pipeline(PolynomialFeatures(degree=2), Ridge(alpha=0.1))
 # ajusta el modelo con respecto a X_train y y_train
 modelo_ridge.fit(X_train, y_train)
