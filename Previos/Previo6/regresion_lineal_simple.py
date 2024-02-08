@@ -15,7 +15,8 @@ modelo = LinearRegression()
 # ajusta el modelo, le paso los parametros X y 'y'
 modelo.fit(X, y)
 
-# imprime la informacion y los atributos dentro de modelo.fit y se acceden de esa manera
+# imprime la informacion y los atributos dentro de modelo.fit,
+# se acceden de esa manera
 print("Coeficiente:", modelo.coef_[0][0])
 print("Intercepcion:", modelo.intercept_[0])
 
