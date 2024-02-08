@@ -24,12 +24,14 @@ modelo_polinomico = make_pipeline(
 modelo_polinomico.fit(X_train, y_train)
 
 # crea el modelo Lasso (L1) que genera un conjunto de PolynomialFeatures degree 2
+# Agrega la suma de valores absolutos de los coeficientes multiplicados por un parametro de regularizacion
 # el parametro de regularizacion es 0.1
 modelo_lasso = make_pipeline(PolynomialFeatures(degree=2), Lasso(alpha=0.1))
 # ajusta el modelo con respecto a X_train y y_train
 modelo_lasso.fit(X_train, y_train)
 
 # crea el modelo Ridge (L2) que genera un conjunto de PolynomialFeatures degree 2
+# agrega la suma de valores cuadrados de los coeficientes multiplicados por un parametro de regularizacion
 # el parametro de regularizacion es 0.1
 modelo_ridge = make_pipeline(PolynomialFeatures(degree=2), Ridge(alpha=0.1))
 # ajusta el modelo con respecto a X_train y y_train
