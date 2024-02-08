@@ -9,7 +9,8 @@ import numpy as np
 
 # se generan numeros al azar pero siempre los mismos
 np.random.seed(42)
-# se genera un vector de 100 numeros al azar bidimensionales en un rango de 0 a 10
+# se genera un vector de 100 numeros al azar bidimensionales
+# en un rango de 0 a 10
 X = np.random.rand(100, 2) * 10
 
 # lista vacia
