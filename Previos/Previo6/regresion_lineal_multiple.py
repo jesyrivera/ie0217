@@ -5,8 +5,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.datasets import make_regression
 
-# crea datos de ejemplos, 100 muestras, caracteristicas 3, parametro de ruido 20
-# semilla de 42
+# crea datos de ejemplos, 100 muestras, caracteristicas 3,
+# parametro de ruido 20, semilla de 42
 X, y = make_regression(n_samples=100, n_features=3, noise=20, random_state=42)
 
 # se crea un dataframe y se le indican cuales columnas va a tener
@@ -14,8 +14,8 @@ df = pd.DataFrame(X, columns=['Tamano', 'Habitaciones', 'Distancia_Ciudad'])
 # columna se crea con lo que se genero en y
 df['Precio'] = y
 
-# los datos de ejemplo que se crearon, se dividen en conjuntos de entrenamiento y prueba
-# se generan 4 vectores
+# los datos de ejemplo que se crearon, se dividen en conjuntos
+# de entrenamiento y prueba, se generan 4 vectores
 X_train, X_test, y_train, y_test = train_test_split(
     df[['Tamano', 'Habitaciones', 'Distancia_Ciudad']],
     df['Precio'], test_size=0.2, random_state=42
@@ -83,7 +83,7 @@ ax3.set_ylabel('Precio Predicho')
 ax3.set_title('Comparacion de Precio vedadero y Precio Predicho')
 
 
-#se maximiza el espacio de los graficos
+# se maximiza el espacio de los graficos
 plt.tight_layout()
 # lo muestra
 plt.show()
