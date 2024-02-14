@@ -7,7 +7,7 @@ Se utilizo la biblioteca kaggle, se instalo utilizando el comando 'pip install k
 - se agrego a esta carpeta el archivo 'kaggle.json'
 - la carpeta se encuentra en la ruta: 'C:\Users\jesyr', esto porque mi usario se llama asi, entonces la carpeta tiene que estar en el user profile
 
-El programa se ejecuta utilizando el comando 'make run'.
+El programa se ejecuta utilizando el comando 'make run'. Tambien, para limpiar los archivos generados se utiliza el comando 'make clean'.
 
 # Parte Teorica (30 pts)
 ## Preguntas Teoricas
