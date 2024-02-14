@@ -2,8 +2,12 @@
 
 # Instrucciones de ejecucion
 
+Se utilizo la biblioteca kaggle, se instalo utilizando el comando 'pip install kaggle', luego se genero un token desde el perfil en Kaggle, cuando se hizo esto se descargo un archivo .JSON, entonces se creo un directorio de la siguiente forma:
+- se creo una carpeta llamada '.kaggle'
+- se agrego a esta carpeta el archivo 'kaggle.json'
+- la carpeta se encuentra en la ruta: 'C:\Users\jesyr', esto porque mi usario se llama asi, entonces la carpeta tiene que estar en el user profile
 
-
+El programa se ejecuta utilizando el comando 'make run'.
 
 # Parte Teorica (30 pts)
 ## Preguntas Teoricas
@@ -122,6 +126,12 @@ Para conectarse a una API se necesita autenticacion, esto se solicita para que e
 
 'DELETE' es para eliminar datos
 
+
+# Documentacion
+
+Se puede observar en las metricas de rendimiento, en los de *regresion lineal* que el error cuadratico medio es mayor (por poco) a los de *regresion No lineal*. Al contrario, el coeficiente de determinacion es mayor para la *regresion no lineal*. En cuanto al error absoluto medio, es menor en modelos de *regresion no lineal*, esto quiere decir que la prediccion de los valores es bastante buena. Por tanto, parece que el rendimiento en *regresion no lineal* es mejor que la *regresion lineal*, ya que tuvo mejores resultados.
+
+Por otra parte, el numero optimo de clusters con el metodo del codo es de 10, lo que quiere decir es que los conjuntos de datos se agrupan en 10 grupos. 
 
 ### Referencias
 
