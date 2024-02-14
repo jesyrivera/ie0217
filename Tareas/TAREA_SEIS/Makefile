@@ -8,6 +8,10 @@ all: run
 run:
 	python $(SRC_DIR)\main.py
 
+# Regla para limpiar archivos generados
+clean:
+	del /s /q $(SRC_DIR)\__pycache__\* $(SRC_DIR)\*.pyc
+
 # Regla para descargar el conjunto de datos y configurar el directorio .kaggle
 setup:
 	mkdir %USERPROFILE%\.kaggle
